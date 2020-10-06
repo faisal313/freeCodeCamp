@@ -19,14 +19,14 @@ const propTypes = {
   username: PropTypes.string
 };
 
-function Intro({
+const Intro = ({
   isSignedIn,
   name,
   pending,
   complete,
   completedChallengeCount,
   slug
-}) {
+}) => {
   if (pending && !complete) {
     return (
       <>
